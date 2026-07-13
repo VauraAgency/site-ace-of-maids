@@ -76,6 +76,11 @@
   .service-detail .body { color: rgba(0,0,0,0.62); font-size: 0.95rem; }
   @media (max-width: 760px) { .service-detail-grid { grid-template-columns: 1fr; } }
 
+  .gallery-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 16px; }
+  .gallery-grid img { border-radius: 14px; width: 100%; height: 320px; object-fit: cover; }
+  .gallery-grid img:first-child { height: 320px; }
+  @media (max-width: 760px) { .gallery-grid { grid-template-columns: 1fr; } .gallery-grid img { height: 220px; } }
+
   .about-layout { display: grid; grid-template-columns: 1fr 0.9fr; gap: 48px; align-items: start; }
   .about-layout img { border-radius: 14px; aspect-ratio: 4/3; object-fit: cover; width: 100%; }
   .about-copy p { color: rgba(0,0,0,0.68); margin-bottom: 18px; max-width: 60ch; }
@@ -158,7 +163,7 @@
       </div>
     </div>
     <div class="hero-panel">
-      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=AaVGc3nFjYzKsUoWVP_U0VOZQE1RAhos8RFz2k1bvFfWnOhdcOjIqEzqSF_MCTzjiw8TwQTudAjL4oSZMkVVc2CbtFw8dahX5oJZtgOs-zO9IcPn8xnMK9ZwgBNJnZ6fJd6Lvr1cbcx6WSdt-1n4KCKr7lYF8Xy6KDMQx5kC64RMwWSX8V5NNS5DOWDToN9yzskksZG2JX8AjvsvNbZxIfgXNyYicPGYII59Bg0Dm5BHLX2HWpnW2UPj3myV-lFo7z2FUqR-ClgyEv3h7apbLH7tMJDRlmRzScvF7-T4PX4h2Wl_7PFOrqA7zlqfP9SMKRTM34gZ7_hGdTE_61dOpCFdywt15A5_7IZtxhOq41p0bGGb0yL1q3zppHfHavZeRMKl5xKMe6VVESUjPY5-1m7R52zuhZ98jrXHjxH77txgoxmxnE1m&key=AIzaSyBVt52zNoH0eoDZkXH8WoRxvtsV9ZK1Iu4" alt="Ace of Maids" loading="lazy">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=AaVGc3mKJCN9JK2rOKjctVDiuXHqWe4MtxUKCBh5emDAC58xfJ_cgMzzJPr30NQVS9sGDO4bkIKbzDYgElEyMVQSlLMNUWFF1v22CUA6TE4eujzfwj4glMMPWR9Pqsza2EftYaqu2bq4tA8tmlIzyzRXRo6gGntdSyQzHS4CP_OR0iNO-bFV1eL6lJN4VYnGIrk8T0KLpYBXWmEKk01_01jgwk-buAc9zYIqp8g6ImbVws8GBF66MIVdL8fwZrMmsZBcX2HGBivpjgLSmw31wUt7F2vhkAnCJ93ATgPiEnEPv7imASYub2jahqyZkdkPoVjXBPXCu7Ky1MdI6L6ItDrHLnMAypfRPN7fa3-KP9a6s_RDD8u9fo_RXi6y4XU-ahmo36aH6VOE3LuYEXPxPxNWDLzfsI0FFH9VGD6i5Q1ROLnimpTL&key=AIzaSyBVt52zNoH0eoDZkXH8WoRxvtsV9ZK1Iu4" alt="Ace of Maids" loading="lazy">
       <div class="hero-stat"><span class="num">5★</span><span class="label">from 3 Google reviews</span></div>
       <div class="hero-panel-row"><span class="k">Address</span><span>229 Jackson St, Anoka, MN 55303, USA</span></div>
       <div class="hero-panel-row"><span class="k">Phone</span><span>(763) 427-0832</span></div>
@@ -179,6 +184,14 @@
 <div class="service-row"><span class="name">Licensed & Insured</span><span class="blurb">Fully covered work, every job.</span></div>
 <div class="service-row"><span class="name">Same-Day Service</span><span class="blurb">Calls answered fast, no overnight wait.</span></div></div>
     </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="container">
+    <div class="gallery-grid" data-reveal><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=AaVGc3mKJCN9JK2rOKjctVDiuXHqWe4MtxUKCBh5emDAC58xfJ_cgMzzJPr30NQVS9sGDO4bkIKbzDYgElEyMVQSlLMNUWFF1v22CUA6TE4eujzfwj4glMMPWR9Pqsza2EftYaqu2bq4tA8tmlIzyzRXRo6gGntdSyQzHS4CP_OR0iNO-bFV1eL6lJN4VYnGIrk8T0KLpYBXWmEKk01_01jgwk-buAc9zYIqp8g6ImbVws8GBF66MIVdL8fwZrMmsZBcX2HGBivpjgLSmw31wUt7F2vhkAnCJ93ATgPiEnEPv7imASYub2jahqyZkdkPoVjXBPXCu7Ky1MdI6L6ItDrHLnMAypfRPN7fa3-KP9a6s_RDD8u9fo_RXi6y4XU-ahmo36aH6VOE3LuYEXPxPxNWDLzfsI0FFH9VGD6i5Q1ROLnimpTL&key=AIzaSyBVt52zNoH0eoDZkXH8WoRxvtsV9ZK1Iu4" alt="Ace of Maids" loading="lazy">
+<img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=AaVGc3lx6kQkIL_y16-wXxSaZWxJgFmFT9chREvi5UkWdO3Bh1n4TDUEUAHtqQqQY2d4fGRNY9LMkXPtkhxkEzH1J4E9uXorbsD9W8QKkn4y3bKKoU5c2sT1JHBOVTKom_zJRiJFnxZUUdLmyqEoSSPhZfdcqye1nZuAGEIM3lC70CbMovX24SouIqLV-v4jrGiRX5LvFBnQu34ElFIIxQ0q79x5yweraxCLxq8YBnFU-8vrLN3KvJb7alky7OJdVdjIH4TZIRylF2VQ0z8dbgSb1LkwBPxFoeXjKiIJ1TL60gitsZoXTiZkyEIiJz_hpHKCEFd2RPuc3LIg7ZdO1XRYer-qv88CxAg69JgxmarSKJgUwXhH9VhMADa0HGR5wW8j1m46wnbE0DBhrL7SyUDwyPZg6-ZQrMaCJgfdF1terzxgig&key=AIzaSyBVt52zNoH0eoDZkXH8WoRxvtsV9ZK1Iu4" alt="Ace of Maids" loading="lazy">
+<img src="https://picsum.photos/seed/ace-of-maids-2/1200/900" alt="Ace of Maids" loading="lazy"></div>
   </div>
 </section>
 
